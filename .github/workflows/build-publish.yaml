@@ -17,5 +17,5 @@ jobs:
         with:
           username: w9jds
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: w9jds/firebase-action
+          repository: imjustchew/preact-action
           tags: latest
