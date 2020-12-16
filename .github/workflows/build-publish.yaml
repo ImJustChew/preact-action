@@ -15,7 +15,7 @@ jobs:
       - name: docker/build-push
         uses: docker/build-push-action@v1
         with:
-          username: w9jds
+          username: imjustchew
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: imjustchew/preact-action
           tags: latest
