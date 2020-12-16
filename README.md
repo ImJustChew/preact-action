@@ -30,7 +30,7 @@ jobs:
       - name: Build Project
         uses: ImJustChew/preact-action@master
         with:
-          arg: preact build
+          args: preact build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
