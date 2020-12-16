@@ -13,7 +13,11 @@ LABEL com.github.actions.color="gray-dark"
 RUN apk --update add openjdk8-jre
 RUN apk add --no-cache git
 
-RUN npm install -g preact-cli
+ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
+
+ENV PATH=$PATH:/home/node/.npm-global/bin
+
+RUN npm install preact-cli --global --unsafe-perm exp
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
